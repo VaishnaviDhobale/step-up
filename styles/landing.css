@@ -1,0 +1,115 @@
+#container {
+    background: #F5F9FF;
+
+    height: 100vh;
+
+}
+
+#container-box {
+    background: white;
+    /* border: 1px solid red; */
+    padding: 20px;
+    margin: 16px;
+}
+
+#container-items {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+
+    height: 220px;
+    background: #F6FAFD;
+    /* border: 1px solid rebeccapurple; */
+}
+
+#conatiner-box-left {
+    margin-left: 15%;
+}
+
+#left-box-image {
+    width: 150px;
+}
+
+#conatiner-box-right {
+    margin-right: 15%;
+    margin-left: 50px;
+
+}
+
+#create-btn-div {
+    margin-top: 40px;
+}
+
+#create-btn {
+    color: #ffff;
+    background: #377dff;
+    padding: 0.475rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.42rem;
+    border: none;
+}
+
+span {
+    margin: 10px;
+}
+
+/* ----------- sideBar --------------- */
+#sidebar-wrapper {
+    margin-right: -600px;
+
+    right: 0;
+    width: 600px;
+    background: #ffff;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.5s ease-in 0s;
+    -webkit-transition: all 0.5s ease-in 0s;
+    -moz-transition: all 0.5s ease-in 0s;
+    -ms-transition: all 0.5s ease-in 0s;
+    -o-transition: all 0.5s ease-in 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    line-height: 50px;
+    text-indent: 20px;
+}
+
+.sidebar-nav li a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+#sidebar-wrapper.active {
+    right: 550px;
+    width: 600px;
+    transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+}
+
+.toggle {
+    margin: 5px -300px 0 0;
+}
+
+#video-frame {
+    margin-top: 60px;
+    margin-left: 30px;
+}
