@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+#container{
+    border: 1px solid black;
+    height: auto;
+    background-color: rgb(238, 237, 237);
+}
+#first{
+    /* border: 1px solid rgb(0, 179, 255); */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: white;
+}
+#first>div{
+    /* border: 1px solid red; */
+    margin-left: 10px;
+}
+#second{
+    display: flex;
+    padding: 5px;
+    
+}
+#second>div{
+   
+    /* border:1px solid blue; */
+    border-radius: 5px;
+}
+#secondF{
+    width: 33%;
+    margin-right: 10px;
+    background-color: white;
+}
+#secondS{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    gap: 15px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+#secondS>div{
+    height: 200px;
+    /* border: 1px solid red; */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+}
+#second>div img{
+    margin: 15px 0px;
+}
+#second>div p{
+    margin: 15px 0px;
+}
+#second>div button{
+    margin: 15px 0px;
+    padding: 10px 25px;
+    background-color:#377dff;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    
+}
