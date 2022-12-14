@@ -1,0 +1,546 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Mulish:wght@300&family=Questrial&family=Rubik:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Didact Gothic', sans-serif; */
+  font-family: 'Mulish', sans-serif;
+  /* font-family: 'Questrial', sans-serif;
+  font-family: 'Rubik', sans-serif;  */
+}
+/* navbar design */
+
+#home-navbar {
+  display: flex;
+  flex-direction:inherit;
+  /* justify-content: center; */
+  padding-left: 8%;
+  margin-bottom: -40px;
+  border:1px solid red;
+}
+#home-navbar ul {
+  display: flex;
+  position: relative;
+  top: 35px;
+}
+#home-navbar ul > li {
+  list-style-type: none;
+  margin-right: 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#home-navbar ul > li:hover{
+  color: rgb(49, 78, 182);
+  cursor: pointer;
+}
+#home-navbar img {
+  width: 100px;
+  margin-right: 50px;
+  position: relative;
+  bottom: 35px;
+}
+#home-navbar-buttons > button:nth-child(1) {
+  margin-right: 20px;
+}
+#home-navbar-buttons> button{
+  background-color: #6639b3;
+  color: white;
+  font-size: 17px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  bottom: 10px;
+  font-weight: bold;
+}
+#home-navbar-buttons > button:nth-child(2) {
+ background-color: #ff7342 ;
+}
+.fa-sharp{
+  margin-left: 5px;
+  position: relative;
+  top: 1px;
+}
+.fa-sharp:hover{
+  color: rgb(49, 78, 182);
+}
+
+/* submenu design */
+.main-sub{
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  padding: 40px 10px 0 10px;
+  /* border: 10px solid red; */
+}
+.product-submenu{
+  border: none;
+  display: grid; 
+  grid-template-columns: 40% 1fr;
+  /* padding: 40px 50px 0 50px; */
+  box-shadow: rgba(164, 157, 157, 0.9) 0px 0px 6px 0;
+  padding-top: 50px;
+}
+.product-submenu-1{
+  box-shadow: rgba(190, 185, 185, 0.15) 2px 0px 0px;
+}
+.product-submenu-1>div{
+  font-size: 18px;
+  display:grid;
+  padding:20px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.product-submenu-1>div>p{
+  position: relative;
+  left:15px;
+  bottom:17px;
+  margin-left: 20px;
+  padding-right: 70px;
+  font-weight: bold;
+}
+.product-submenu-1>div:nth-child(1){
+  background-color:rgb(189, 241, 189);
+  color:green
+}
+.product-submenu-1>div:nth-child(2):hover{
+  background-color: #170598;
+  background-color: #fbd5cb;
+}
+.product-submenu-1>div:nth-child(3):hover{
+  background-color: #f2e8c6;
+}
+.product-submenu-1>div:nth-child(4):hover{
+  background-color: #dee6ec;
+}
+
+.main{
+  display:flex;
+  font-size: 17px;
+}
+.main>div:nth-child(1){
+  padding:30px;
+  padding-top: 10px;
+}
+.main>div:nth-child(2){
+  padding:30px;
+  padding-top: 10px;
+}
+.main>div>p>a{
+  text-decoration: none;
+  color: #606264;
+  font-size: 15.5px;
+}
+.main>div>p{
+  margin-bottom: 25px;
+}
+.main>div>p>a:hover{
+  color:rgb(30, 164, 236)
+}
+
+/* plans design */
+
+.sub-plan>div{
+  display:grid;
+  grid-template-columns: 10% 1fr;
+  padding: 10px;
+  width: 350px;
+}
+.sub-plan>div>div>p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size:13px
+}
+.plans>hr{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+strong{
+  position: relative;
+  bottom:4px;
+  color: #39393a;
+}
+.plans{
+  background-color: #e8eae8;
+  padding-left:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.fa-gear{
+  /* margin-left: 10px; */
+  margin-right: 17px;
+}
+.fa-arrow-right{
+  margin-left: 10px;
+  position: relative;
+  top:2px;
+}
+.sub-plan>div:hover{
+  background-color: white;
+  cursor: pointer;
+}
+.sub-plan>p:hover{
+  background-color:white;
+  cursor: pointer;
+  width: 300px;
+  padding:10px
+}
+.more{
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.more>p{
+  position: relative;
+  bottom:2px;
+}
+
+/* free tools design */
+.tools-submenu{
+  display: none;
+}
+#home-navbar ul > li:hover .tools-submenu{
+  display: block;
+  position: absolute;
+  background-color:white;
+  padding:20px;
+  padding-right:100px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 15px;
+}
+.tools-submenu>p>a{
+  text-decoration: none;
+  color: rgb(39, 37, 37);
+}
+.tools-submenu>p{
+  margin-bottom: 15px;
+}
+.tools-submenu>p>a:hover{
+  color: #135ece;
+}
+.tools-submenu>p>a{
+  font-weight: 500;
+}
+
+
+/* resor design */
+.resSubMenu{
+  display:grid;
+  grid-template-columns: 40% 1fr;
+}
+.resSubMenu-1>p{
+  /* margin-bottom: 10px; */
+  padding: 11px 0px 11px 20px;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.resSubMenu-1>p:first-child{
+  background-color:#c8d3e3;
+  color: #135ece;
+}
+.resSubMenu-1>p:hover{
+  background-color:#c8d3e3;
+  color: #135ece;
+  cursor: pointer;
+  /* padding:15px; */
+}
+.resSubMenu-1{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.resSubMenu-2>p{
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.resSubMenu-2{
+  padding:20px;
+  padding-left:60px
+}
+.resSubMenu-2>p:hover{
+  color: #135ece;
+  cursor: pointer;
+}
+
+/* navbar Refer design */
+
+/* .refer>p{
+  border: 1px solid red;
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Mulish:wght@300&family=Questrial&family=Rubik:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Didact Gothic', sans-serif; */
+  font-family: 'Mulish', sans-serif;
+  /* font-family: 'Questrial', sans-serif;
+  font-family: 'Rubik', sans-serif;  */
+}
+/* navbar design */
+
+#home-navbar {
+  display: flex;
+  flex-direction:inherit;
+  /* justify-content: center; */
+  padding-left: 8%;
+  margin-bottom: -40px;
+  border:1px solid red;
+}
+#home-navbar ul {
+  display: flex;
+  position: relative;
+  top: 35px;
+}
+#home-navbar ul > li {
+  list-style-type: none;
+  margin-right: 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#home-navbar ul > li:hover{
+  color: rgb(49, 78, 182);
+  cursor: pointer;
+}
+#home-navbar img {
+  width: 100px;
+  margin-right: 50px;
+  position: relative;
+  bottom: 35px;
+}
+#home-navbar-buttons > button:nth-child(1) {
+  margin-right: 20px;
+}
+#home-navbar-buttons> button{
+  background-color: #6639b3;
+  color: white;
+  font-size: 17px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  bottom: 10px;
+  font-weight: bold;
+}
+#home-navbar-buttons > button:nth-child(2) {
+ background-color: #ff7342 ;
+}
+.fa-sharp{
+  margin-left: 5px;
+  position: relative;
+  top: 1px;
+}
+.fa-sharp:hover{
+  color: rgb(49, 78, 182);
+}
+
+/* submenu design */
+.main-sub{
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  padding: 40px 10px 0 10px;
+  /* border: 10px solid red; */
+}
+.product-submenu{
+  border: none;
+  display: grid; 
+  grid-template-columns: 40% 1fr;
+  /* padding: 40px 50px 0 50px; */
+  box-shadow: rgba(164, 157, 157, 0.9) 0px 0px 6px 0;
+  padding-top: 50px;
+}
+.product-submenu-1{
+  box-shadow: rgba(190, 185, 185, 0.15) 2px 0px 0px;
+}
+.product-submenu-1>div{
+  font-size: 18px;
+  display:grid;
+  padding:20px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.product-submenu-1>div>p{
+  position: relative;
+  left:15px;
+  bottom:17px;
+  margin-left: 20px;
+  padding-right: 70px;
+  font-weight: bold;
+}
+.product-submenu-1>div:nth-child(1){
+  background-color:rgb(189, 241, 189);
+  color:green
+}
+.product-submenu-1>div:nth-child(2):hover{
+  background-color: #170598;
+  background-color: #fbd5cb;
+}
+.product-submenu-1>div:nth-child(3):hover{
+  background-color: #f2e8c6;
+}
+.product-submenu-1>div:nth-child(4):hover{
+  background-color: #dee6ec;
+}
+
+.main{
+  display:flex;
+  font-size: 17px;
+}
+.main>div:nth-child(1){
+  padding:30px;
+  padding-top: 10px;
+}
+.main>div:nth-child(2){
+  padding:30px;
+  padding-top: 10px;
+}
+.main>div>p>a{
+  text-decoration: none;
+  color: #606264;
+  font-size: 15.5px;
+}
+.main>div>p{
+  margin-bottom: 25px;
+}
+.main>div>p>a:hover{
+  color:rgb(30, 164, 236)
+}
+
+/* plans design */
+
+.sub-plan>div{
+  display:grid;
+  grid-template-columns: 10% 1fr;
+  padding: 10px;
+  width: 350px;
+}
+.sub-plan>div>div>p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size:13px
+}
+.plans>hr{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+strong{
+  position: relative;
+  bottom:4px;
+  color: #39393a;
+}
+.plans{
+  background-color: #e8eae8;
+  padding-left:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.fa-gear{
+  /* margin-left: 10px; */
+  margin-right: 17px;
+}
+.fa-arrow-right{
+  margin-left: 10px;
+  position: relative;
+  top:2px;
+}
+.sub-plan>div:hover{
+  background-color: white;
+  cursor: pointer;
+}
+.sub-plan>p:hover{
+  background-color:white;
+  cursor: pointer;
+  width: 300px;
+  padding:10px
+}
+.more{
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.more>p{
+  position: relative;
+  bottom:2px;
+}
+
+/* free tools design */
+.tools-submenu{
+  display: none;
+}
+#home-navbar ul > li:hover .tools-submenu{
+  display: block;
+  position: absolute;
+  background-color:white;
+  padding:20px;
+  padding-right:100px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 15px;
+}
+.tools-submenu>p>a{
+  text-decoration: none;
+  color: rgb(39, 37, 37);
+}
+.tools-submenu>p{
+  margin-bottom: 15px;
+}
+.tools-submenu>p>a:hover{
+  color: #135ece;
+}
+.tools-submenu>p>a{
+  font-weight: 500;
+}
+
+
+/* resor design */
+.resSubMenu{
+  display:grid;
+  grid-template-columns: 40% 1fr;
+}
+.resSubMenu-1>p{
+  /* margin-bottom: 10px; */
+  padding: 11px 0px 11px 20px;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.resSubMenu-1>p:first-child{
+  background-color:#c8d3e3;
+  color: #135ece;
+}
+.resSubMenu-1>p:hover{
+  background-color:#c8d3e3;
+  color: #135ece;
+  cursor: pointer;
+  /* padding:15px; */
+}
+.resSubMenu-1{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.resSubMenu-2>p{
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.resSubMenu-2{
+  padding:20px;
+  padding-left:60px
+}
+.resSubMenu-2>p:hover{
+  color: #135ece;
+  cursor: pointer;
+}
+
+/* navbar Refer design */
+
+/* .refer>p{
+  border: 1px solid red;
+
+} */
