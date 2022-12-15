@@ -6,24 +6,184 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>choose-template</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #nav-btn {
+            /* border: 1px solid red; */
+            height: 50px;
+            margin-left: 15px;
+        }
+
+        #nav-arrow-left {
+            cursor: pointer;
+
+        }
+
+        #nav-arrow-left {
+            margin: 10px;
+            padding-top: 5px;
+            margin-left: 10px;
+            width: 25px;
+        }
+
+        /* ------------------------ */
+        #container {
+            background: #F2F5FC;
+            height: 100vh;
+            border: 1px solid #ffff;
+        }
+
+        /* --------------------------- */
+        #main-container {
+            background: #ffff;
+            height: 80px;
+            /* border: 1px solid green; */
+            margin: 12px;
+            padding: 24px 5px 40px 18px;
+            border-radius: 8px;
+        }
+
+        #div-thems-btn {
+            margin-top: 20px;
+
+        }
+
+        .thems-div-btn {
+            border: none;
+            font-size: 17px;
+            padding: 7px;
+            border-radius: 6px;
+        }
+
+        #thems-btn {
+
+            background-color: #e1f0ff;
+            color: #377dff;
+        }
+
+        #brush-img {
+            color: #1F2A68;
+        }
+
+        #btn-code {
+            background: none;
+            margin-left: 20px;
+            color: #1F2A68;
+        }
+
+        /* ----------------------- */
+
+        #theme-row {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            background: rgb(231, 230, 230);
+            /* border: 5px solid */
+            margin: 40px 0px 0px -15px;
+            padding: 12px 10px 6px 12px;
+        }
+
+        #theme-row>div {
+            width: 150px;
+            /* background: aqua; */
+            /* height: 300px; */
+
+        }
+
+        #theme-row>div img {
+            width: 200px;
+        }
+
+        /* ---------------------- */
+        #choose-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="nav-btn"></div>
+    <div id="nav-btn">
+
+        <img onclick="history.back()" id="nav-arrow-left" src="img/arrow-left.svg" alt="">
+    </div>
 
     <div id="container">
-        <div id="main-conatiner">
+        <div id="main-container">
             <div id="headindN-name">
-                <h1>Choose Template</h1>
+                <h2>Choose Template</h2>
             </div>
-            <div id="btn-thems">
-                <button>Themes</button>
 
-                <button>Code your own</button>
+            <!-- ------button---------- -->
+            <div id="div-thems-btn">
+                <span><img id="brush-img" src="im/paint-brush.png" alt="" width="20px"><button id="thems-btn"
+                        class="thems-div-btn">Themes</button></span>
+
+                <button id="btn-code" class="thems-div-btn">Code your own</button>
             </div>
+
+            <!-- ------button End---------- -->
+
+            <!-- -----------theme-row------------ -->
+            <div id="theme-row">
+                <div>1</div>
+                <div>
+                    <img src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/bakery.png"
+                        alt="">
+
+                    <div id="choose-btn">
+                        <button>Choose</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/bakery.png"
+                        alt="">
+                </div>
+
+                <div>
+                    <img src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/bakery.png"
+                        alt="">
+                </div>
+
+                <div>
+                    <img src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/bakery.png"
+                        alt="">
+                </div>
+
+                <div>
+                    <img src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/bakery.png"
+                        alt="">
+                </div>
+
+                <div>
+                    <img src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/bakery.png"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/bakery.png"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/bakery.png"
+                        alt="">
+                </div>
+
+            </div>
+
+            <!-- -----------theme-row------------ -->
         </div>
 
     </div>
 </body>
 
 </html>
+
+<script>
+
+</script>
