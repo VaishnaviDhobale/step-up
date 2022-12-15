@@ -1,47 +1,86 @@
-body{
-    background-image: url('img/signupback.png');
-    background-size:contain;
-   }
-   #sign-in{
-     margin:auto;
-     text-align:center;
-     background-color: white;
-      width:30%;
-      height:80%;
-     margin-top:3%;
-     border-radius:2%;
-     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-     margin-bottom: 3%;
-     padding:20px;
-   }
-   #logo-img{
-     margin-top:20px;
-     width:30%;
-   }
-   p{
-     color:rgb(136, 134, 134);
-   }
-   input{
-     border-style:solid;
-     border-color:rgb(205, 199, 199);
-     line-height:3em;
-     width:80%;
-     margin-bottom:3%;
-     border-radius: 3px;
-   }
-   button{
-     border:0px;
-     line-height:2.4em;
-     width:82%;
-     background-color:rgb(211, 231, 249);
-     color:black;
-     border-radius: 5px;
-   }
-   form>button{
-     border:0px;
-     line-height:2.4em;
-     width:82%;
-     background-color: rgb(59, 59, 159);
-     color:white;
-     border-radius: 5px;
-   }
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+ #sign-in{
+   margin:auto;
+   background-color:rgb(253, 253, 253);
+   width:31%;
+   height:80%;
+   margin-top:2%;
+   border-radius:2%;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   margin-bottom: 3%;
+   padding:20px;
+   text-align:center;
+   align-items: center;
+ }
+ #logo-img{
+   width:45%;
+   margin-bottom:10px;
+   margin-top: 10px;
+ }
+ #small{
+   color:rgb(136, 134, 134);
+   font-family:Segoe UI;
+   font-size: 14px;
+ }
+ input{
+  border: 0px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   line-height:3.3em;
+   width:85%;
+   margin-bottom:5%;
+   border-radius:3px;
+   padding-left: 15px;
+ }
+ input::placeholder{
+  color:rgb(195, 204, 204);
+  font-family:Segoe UI;
+ font-size:15px;
+ font-weight:400;
+ }
+ form>button{
+   border:0px;
+   line-height:3em;
+   width:85%;
+   background-color: #377dff;
+   color:white;
+   border-radius: 5px;
+   font-family:Segoe UI;
+ font-size:16px;
+ font-weight:600;
+ cursor: pointer;
+ margin-bottom:30px;
+ margin-top: 20px;
+ }
+ a{
+  text-decoration: none;
+  color:#377dff;
+ }
+ p{
+ font-family:Segoe UI;
+ font-size:30px;
+ font-weight: 600;
+ color: rgb(49, 46, 46);
+ margin-bottom:10px;
+ }
+ #or{
+  width:500px;
+  display:flex;
+  align-items: center;
+  margin-left:33%;
+  margin-bottom: 30px;
+ }
+ #gg{
+  width:86%;
+  line-height:3em;
+  background-color:#f0f6ff;
+  margin-left: 8%;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:30px;
+  padding:2px;
+ }
