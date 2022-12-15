@@ -1,0 +1,47 @@
+body{
+    background-image: url('img/signupback.png');
+    background-size:contain;
+   }
+   #sign-in{
+     margin:auto;
+     text-align:center;
+     background-color: white;
+      width:30%;
+      height:80%;
+     margin-top:3%;
+     border-radius:2%;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     margin-bottom: 3%;
+     padding:20px;
+   }
+   #logo-img{
+     margin-top:20px;
+     width:30%;
+   }
+   p{
+     color:rgb(136, 134, 134);
+   }
+   input{
+     border-style:solid;
+     border-color:rgb(205, 199, 199);
+     line-height:3em;
+     width:80%;
+     margin-bottom:3%;
+     border-radius: 3px;
+   }
+   button{
+     border:0px;
+     line-height:2.4em;
+     width:82%;
+     background-color:rgb(211, 231, 249);
+     color:black;
+     border-radius: 5px;
+   }
+   form>button{
+     border:0px;
+     line-height:2.4em;
+     width:82%;
+     background-color: rgb(59, 59, 159);
+     color:white;
+     border-radius: 5px;
+   }
