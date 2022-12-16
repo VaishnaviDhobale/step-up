@@ -17,7 +17,7 @@
 #home-navbar {
   display: flex;
   flex-direction:inherit;
-  padding-left: 60px;
+  padding: 30px 30px 5px 60px;
   margin-bottom: -40px;
   background-color:white;
   /* border:1px solid red; */
@@ -27,8 +27,8 @@
 }
 #home-navbar ul {
   display: flex;
-  position: relative;
-  top: 35px;
+  /* position: relative; */
+  /* top: 35px; */
 }
 #home-navbar ul > li {
   list-style-type: none;
@@ -39,15 +39,16 @@
 #home-navbar ul > li:hover{
   color: rgb(49, 78, 182);
   cursor: pointer;
+  /* border-bottom: 2px solid red; */
 }
 #home-navbar img {
-  width: 100px;
+  width: 150px;
+  height: 50px;
   margin-right: 50px;
   position: relative;
-  bottom: 35px;
+  bottom:7px;
 }
-#home-navbar-bu
-buttons > button:nth-child(1) {
+#home-navbar-buttons > button:nth-child(1) {
   margin-right: 20px;
 }
 #home-navbar-buttons> button{
@@ -327,7 +328,7 @@ strong{
   /* border: 1px solid red; */
   background-color:#ff7342;
   color: white;
-  padding:5px;
+  padding:15px;
   font-size: 18px;
   border-radius:50px;
   position: relative;
@@ -477,15 +478,297 @@ strong{
 }
 
 /* five-middle-scroll design */
-
-.upper-scroller{
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  border: 1px solid red;
+.five-middle{
+  background-color: #f5f7ff;
+  text-align: center;
+  padding-top: 80px;
 }
-.scroller{
+.main-slide-div{
+  display: flex;
+}
+.main-slider{
+  width: 60%;
+  height:500px;
+  margin: auto;
+  margin-top: 100px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.slide{
+  width:100%;
+  height:100%;
+  position: absolute;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+.slide>img{
+  width: 200px;
+  height:200px;
+  margin-bottom:40px;
+  border-radius: 50%;
+}
+.slide>h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.slide>p{
+  font-size:18px;
+}
+.fa-angle-left{
+  position: relative;
+  left:140px;
+  top:320px;
+  cursor: pointer;
+}
+.fa-angle-right{
+  position: relative;
+  right:140px;
+  top:320px;
+  cursor: pointer;
+}
+
+/* middle-six design */
+.middle-six-up{
+  text-align: center;
+  margin-top: 80px;
+  padding: 0 200px 100px 200px;
+}
+.middle-six-up>h1{
+  margin-bottom: 30px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 42px;
+  color:#2d2d2f;
+}
+.middle-six-up>p{
+  font-size:22px;
+  color:#2e3d71;
+}
+.middle-six-one{
+  display:flex;
+  justify-content:space-evenly;
+  margin-bottom: 35px;
+}
+.middle-six-one>div>img{
+  width: 70px;
+  margin-bottom: 15px;
+}
+.middle-six-one>div{
+  width: 180px;
+  text-align: center;
+  background-color:#f5f7fb;
+  padding: 35px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.middle-six-one>div>p{
+  font-size:18px;
+  font-weight:bold;
+  color: #1c2133;
+  font-weight: 800;
+}
+.middle-six-one>div:hover{
+  border: 2px solid #234ad5;
+  transform: scale(1.1)
+}
+/* support design */
+
+.icon{
+  display: grid;
+  grid-template-columns:50% 50%;
+  width:400px;
+  text-align: center;
+  margin: auto;
+}
+.icon-1,.icon-2{
+  display: flex;
+}
+.icon-1>p,.icon-2>p{
+  margin-left: 10px;
+}
+.support{
+  padding: 130px 0;
+  background-color:#f5f7fb;
+  margin-top: 80px;
   text-align: center;
 }
-.fa-caret-left{
- width: 200px;
+.support>input{
+  border: 2px solid orangered;
+  padding: 25px;
+  font-size: 20px;
+  width: 650px;
+  outline:none;
+  border-radius: 50px;
+  margin-left: 120px;
+  margin-bottom: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.support>span{
+  padding: 20px;
+  font-size: 20px;
+  outline:none;
+  border-radius: 50px;
+  background-color:orangered;
+  position: relative;
+  right: 156px;
+}
+.support>span>a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.support>h1~h1{
+  color:#9449fb;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.support>h1{
+  font-family: 'Questrial', sans-serif;
+}
+
+/* footer design */
+.footer{
+  background-image: url("https://cdn5.engagebay.com/new/assets/img/footer_bg.jpeg");
+  width: 100%;
+  color: white;
+  /* z-index: 0; */
+  padding: 50px;
+}
+.footer-1-left>img{
+  width: 400px;
+}
+.footer-1{
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+.footer-1-right>div>div>input{
+  width:50%;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 18px;
+  outline: none;
+  background-color: #333f9b;
+  border: none;
+  background-color: rgba(0,0,0,.2);
+  color: #fff;
+}
+.footer-1-right{
+  padding-top: 30px;
+}
+.footer-1-right>div>div{
+  display: flex;
+  gap:20px
+}
+::placeholder { 
+  color: white;
+  opacity: 1;
+}
+.input-div{
+  margin-top: 30px;
+}
+.buttons{
+  margin-top: 20px;
+}
+.buttons>button{
+  padding:15px 30px;
+  font-size: 18px;
+  font-weight:bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.buttons>button:nth-child(1){
+  background-color:#ff7342;
+  border: none;
+  color:white;
+  margin-right: 20px;
+}
+.buttons>button:nth-child(1)>a{
+  color:white;
+}
+.buttons>button:nth-child(2){
+  border: none;
+}
+.buttons>button:nth-child(2)>a{
+  color:black;
+}
+.buttons>button>a{
+ text-decoration: none;
+}
+
+/* footer-2 design */
+.footer-2{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin-top: 70px;
+}
+.footer-2>div>p{
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.footer-2>div>h3{
+  margin-bottom: 25px;
+}
+
+/* footer-3 design */
+
+.i>p>a{
+  text-decoration: none;
+  color: white;
+}
+.i>p>a:hover{
+  color: rgb(200, 60, 60);
+}
+.i{
+  display: flex;
+}
+.i>i{
+  margin-right: 20px;
+  cursor: pointer;
+}
+.i>i{
+  position: relative;
+  bottom:5px
+}
+.footer-3-left>img{
+  width:110px;
+  /* height:100px */
+  cursor: pointer;
+}
+.footer-3-left>h3{
+  margin-top: -20px;
+  margin-bottom: 33px;
+}
+
+table{
+  margin-top: 15px
+}
+td{
+  text-align: right;
+  background-color:white;
+  color: black;
+  padding: 5px;
+}
+th{
+  background-color: #006097;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+.footer-3{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.footer-3>div:nth-child(2){
+  margin-top: 30px;
+}
+.footer-3>div:nth-child(2)>p{
+  margin-bottom: 10px;
+}
+.footer-3>div:nth-child(2)>p>span:hover{
+ cursor: pointer;
+ color: #dfc1b0;
+}
+.footer hr{
+  border: 1px solid rgb(170, 166, 166);
+  margin: 10px 0;
 }
