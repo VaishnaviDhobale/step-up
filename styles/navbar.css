@@ -35,9 +35,12 @@ a{
 
 #navbar{
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-    /* position: fixed; */
+    position: fixed;
     width:100%;
     height:60px;
+    margin-top: -60px;
+    z-index: 100;
+    background-color: white;
     display: flex;
     justify-content: space-around;
 }
@@ -213,6 +216,7 @@ a{
 .options-hover:last-child {
 
 }
+
 .options-hover{
     z-index: 15;
 }
@@ -424,6 +428,7 @@ a{
 
 #lower-navbar{
     height:70px;
+    margin-top: 60px;
     border: 1px solid rgb(230, 230, 230);
 }
 
@@ -592,7 +597,7 @@ a{
 
 #main-section{
     width:100%;
-    /* height:600px; */
+    min-height:1200px;
     background-color: #E1F0FE;
     padding-top: 20px;
 }
@@ -631,6 +636,7 @@ a{
     overflow: hidden;
     z-index: 1;
     border-radius: 12px;
+    /* position:relative; */
 }
 
 .dashboard-section>div>div:first-child{
