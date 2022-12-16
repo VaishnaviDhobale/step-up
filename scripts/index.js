@@ -509,3 +509,27 @@ function resoDataFun(data) {
     middle.style.display = "block";
   });
 }
+
+
+// for slider
+let slides=document.querySelectorAll(".slide")
+var count=0;
+slides.forEach((ele,index)=>{
+  ele.style.left=`${index*100}%`
+});
+// bug is here
+function goPre(){
+    count--
+  slide_div()
+}
+function goNext(){
+  if(count<slides.length-1){
+   count++
+  }
+  slide_div()
+}
+function slide_div(){
+  slides.forEach((ele,index)=>{
+    ele.style.transform=`translateX(-${count*100}%)`
+  })
+}
