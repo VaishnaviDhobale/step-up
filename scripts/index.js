@@ -534,6 +534,7 @@ function slide_div(){
   })
 }
 
+
 // for chatBot
 let upperBtn=document.querySelector(".chatbot");
 let appendChatBot= document.querySelector(".chatBotData")
@@ -607,3 +608,23 @@ let cross=document.querySelector(".cross");
 cross.addEventListener("click",(()=>{
   appendChatBot.style.display="none"
 }))
+
+// --------------------Login Method------------------------
+
+let loginbtn = document.querySelector(".login-user")
+
+loginbtn.addEventListener("click",function(){
+   window.location.href="Login.html"
+})
+
+let homebtn = document.querySelector(".home-btn")
+
+homebtn.addEventListener("click",function(){
+   window.location.href="index.html"
+})
+
+let blogbtn = document.querySelector(".blog-btn")
+
+blogbtn.addEventListener("click",function(){
+   window.location.href="blog.html"
+})
