@@ -1,0 +1,10 @@
+@media (min-width: 300px) and (max-width: 500px) {
+ .first-middle{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row; 
+}
+.first-middle-left{
+  text-align: center;
+}
+}

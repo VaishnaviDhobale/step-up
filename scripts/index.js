@@ -533,3 +533,77 @@ function slide_div(){
     ele.style.transform=`translateX(-${count*100}%)`
   })
 }
+
+// for chatBot
+let upperBtn=document.querySelector(".chatbot");
+let appendChatBot= document.querySelector(".chatBotData")
+upperBtn.addEventListener("click",(()=>{
+  appendChatBot.style.display="block";
+}))
+upperBtn.addEventListener("dblclick",(()=>{
+  appendChatBot.style.display="none";
+}))
+
+
+const responseObj = {
+  hello: "Hey ! Welcome to Step-Up. How can we help you?",
+  hey: "Hey ! Welcome to Step-Up. How can we help you?",
+  hi: "Hey ! Welcome to Step-Up. How can we help you?",
+  today: new Date().toDateString(),
+  time: new Date().toLocaleTimeString(),
+  about_you:"I Am ChatBot Design By Step-Up Team.",
+  what_is_your_work:"I Am Here For Help You.",
+  about_stepup:"Step-Up Is A Sales Marketing System.",
+  what_is_stepup:"Step-Up Is A Sales Marketing System.",
+  what_i_can_do_using_stepup:"You Can Register Your Business And Also Step-Up have Some Template of Website You Can Use Thoes Totally Free.",
+  ok:"Yah Thanks!",
+  thanks:"Thank You Very Much For Using Step-Up"
+};
+let form=document.querySelector('form')
+form.addEventListener("submit",((e)=>{
+  e.preventDefault()
+  let count=0
+  var ind=document.querySelector(".chat-input").value;
+  let chatBody=document.querySelector(".chat-body"); 
+  let userMsg=document.createElement("h3");
+  userMsg.setAttribute("class","user-message");
+  userMsg.innerText=ind;
+  chatBody.append(userMsg)
+  // userMsg.style.border="2px solid black"
+  ind=ind.split(" ");
+  ind=ind.join("_")
+  for(let key in responseObj){
+    if(ind==key){
+      count++;
+      let systemMsg=document.createElement("h3");
+      systemMsg.setAttribute("class","chatbot-message")
+      systemMsg.innerText=responseObj[key];
+      setTimeout((()=>{
+        chatBody.append(systemMsg)
+      }),1000)
+    }
+  }
+  let inp=document.querySelector(".chat-input").innerText=" "
+  if(count==0){
+    let systemMsg=document.createElement("h3");
+      systemMsg.setAttribute("class","chatbot-message")
+      systemMsg.innerText="Sorry I did not undestand I can't help you";
+      setTimeout((()=>{
+        chatBody.append(systemMsg)
+      }),1000)
+  }
+}))
+
+// set scrollbar always to the bottom
+
+// code not working
+let scrollDiv=document.querySelector("#msgBody");
+scrollDiv.scrollTop=scrollDiv.scrollHeight-scrollDiv.clientHeight;
+
+
+// cross js
+// let appendChatBot= document.querySelector(".chatBotData")
+let cross=document.querySelector(".cross");
+cross.addEventListener("click",(()=>{
+  appendChatBot.style.display="none"
+}))
