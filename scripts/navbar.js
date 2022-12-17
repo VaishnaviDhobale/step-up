@@ -358,7 +358,7 @@ async function patchReq(value,id,boxType,title){
 //   for(let card of cards){
 //     // console.log(card)
 //     card.addEventListener('mousedown',()=>{
-//       console.log(card)
+//       // console.log(card)
 //       card.addEventListener('mousemove',onDrag)
 //      });
 
@@ -398,3 +398,23 @@ function searchTask(data){
      renderData(filterData)
  })
 }
+
+// <-----------------Sidebar function-------------------->
+
+function openside() {
+  document.querySelector("#side-window").style.width = "250px";
+}
+
+function closeside() {
+  document.querySelector("#side-window").style.width = "0";
+}
+
+
+
+// <-----------Landing page change------------
+
+let landingPage = document.querySelector('.landing-page');
+
+landingPage.addEventListener("click",function(){
+   window.location.href = "landingPage.html"
+})
