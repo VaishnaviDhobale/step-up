@@ -533,3 +533,24 @@ function slide_div(){
     ele.style.transform=`translateX(-${count*100}%)`
   })
 }
+
+
+// --------------------Login Method------------------------
+
+let loginbtn = document.querySelector(".login-user")
+
+loginbtn.addEventListener("click",function(){
+   window.location.href="Login.html"
+})
+
+let homebtn = document.querySelector(".home-btn")
+
+homebtn.addEventListener("click",function(){
+   window.location.href="index.html"
+})
+
+let blogbtn = document.querySelector(".blog-btn")
+
+blogbtn.addEventListener("click",function(){
+   window.location.href="blog.html"
+})
