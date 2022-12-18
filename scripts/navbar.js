@@ -424,3 +424,9 @@ landingPage.addEventListener("click",function(){
 let userName = document.querySelector("#username")
 
 userName.innerText = localStorage.getItem("userName")
+
+
+let homeDashboard  = document.querySelector('.img-btn')
+homeDashboard.addEventListener('click',function(){
+    window.location.href = "navbar.html"
+})
