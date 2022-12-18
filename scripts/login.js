@@ -4,6 +4,8 @@ let userPass = document.querySelector("#pass");
 let form = document.querySelector("form");
 let userEmailAdd = localStorage.getItem("userEmail") || null;
 let userPassword = localStorage.getItem("userPassword") || null;
+let userName= localStorage.getItem("userName")|| null;
+
 
 // let obj={};
 
@@ -40,6 +42,7 @@ function checkData(data) {
         if (obj.email == data[i].email && obj.password == data[i].password) {
             localStorage.setItem("userEmail", obj.email)
             localStorage.setItem("userPassword", obj.password)
+            localStorage.setItem("userName",data[i].name)
             alert("Login Successful")
             flag = false;
             setTimeout(redirect, 2000)
