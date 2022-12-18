@@ -239,7 +239,10 @@ strong{
 .tools-submenu>p>a{
   font-weight: 500;
 }
-
+.blog-btn>a{
+  text-decoration: none;
+  color: black;
+}
 
 /* resor design */
 .resSubMenu{
@@ -899,4 +902,8 @@ th{
 .cross:hover{
   cursor: pointer;
   color:#6639b3;
+}
+.blogs>a{
+  text-decoration: none;
+  color:black;
 }
