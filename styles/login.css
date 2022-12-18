@@ -84,3 +84,78 @@
   margin-bottom:30px;
   padding:2px;
  }
+ #gg>a{
+  color: #377dff; font-family:Segoe UI;
+  font-size:17px;
+  font-weight:600;
+  cursor: pointer;margin-left:6px;
+ }
+ form>a{
+  font-weight: 500;
+  font-family:Segoe UI;
+  text-align:right;
+  margin-left:52%;
+ }
+
+
+
+ @media (min-width: 800px) and (max-width: 1000px) {
+  #sign-in {
+    width: 40%;
+    height: 80%;
+  }
+ }
+
+
+ @media (min-width: 600px) and (max-width: 800px) {
+  #sign-in {
+    width: 50%;
+    height: 80%;
+  }
+
+ }
+
+
+ @media (min-width:480px) and (max-width: 600px) {
+  #sign-in {
+    width: 60%;
+    height: 80%;
+  }
+
+ }
+
+ /* -------------------mobile phone size-------------------- */
+ @media (min-width:250px) and (max-width:480px) {
+   #sign-in {
+     width: 100%;
+     height: 100%;
+   }
+
+   #gg>a {
+     font-size: 12px;
+   }
+ }
+
+ @media (min-width:0px) and (max-width:250px) {
+  #sign-in {
+    width: 100%;
+    height: 100%;
+  }
+
+  #gg>a {
+    font-size:10px;
+  }
+
+  #logo-img {
+    width:75%;
+    margin-bottom: 10px;
+  }
+  form>a{
+    font-size:14px;
+    font-family:Segoe UI;
+    text-align:right;
+    margin-left:0%;
+   
+  }
+ }
+
