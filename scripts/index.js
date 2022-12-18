@@ -1,3 +1,8 @@
+let homebtn = document.querySelector(".home-btn")
+
+homebtn.addEventListener("click",function(){
+   window.location.href="index.html"
+})
 
 let product = document.getElementById("product");
 let submenues = document.querySelector(".submenues");
@@ -617,14 +622,6 @@ loginbtn.addEventListener("click",function(){
    window.location.href="Login.html"
 })
 
-let homebtn = document.querySelector(".home-btn")
 
-homebtn.addEventListener("click",function(){
-   window.location.href="index.html"
-})
 
-let blogbtn = document.querySelector(".blog-btn")
 
-blogbtn.addEventListener("click",function(){
-   window.location.href="blog.html"
-})
