@@ -1,3 +1,8 @@
+// let homebtn = document.querySelector(".home-btn")
+
+// homebtn.addEventListener("click",function(){
+//    window.location.href="index.html"
+// })
 
 let product = document.getElementById("product");
 let submenues = document.querySelector(".submenues");
@@ -534,6 +539,7 @@ function slide_div(){
   })
 }
 
+
 // for chatBot
 let upperBtn=document.querySelector(".chatbot");
 let appendChatBot= document.querySelector(".chatBotData")
@@ -607,3 +613,11 @@ let cross=document.querySelector(".cross");
 cross.addEventListener("click",(()=>{
   appendChatBot.style.display="none"
 }))
+
+// --------------------Login Method------------------------
+
+
+
+
+
+
