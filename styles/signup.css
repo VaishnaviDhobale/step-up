@@ -35,8 +35,14 @@
    margin-bottom: 5%;
    border-radius: 3px;
    padding-left: 15px;
- }
+   /* outline-color: #164190; */
+   /* outline: none; */
 
+ }
+ /* input:visited{
+  outline-color: #1d52b4;
+  outline:1px solid  #164190;
+ } */
  input::placeholder {
    color: rgb(195, 204, 204);
    font-family: Segoe UI;
