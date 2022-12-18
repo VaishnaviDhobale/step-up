@@ -900,7 +900,7 @@ th{
   cursor: pointer;
   color:#6639b3;
 }
-.blogs>a{
+.blogs>a,.login>a{
   text-decoration: none;
   color:black;
 }
