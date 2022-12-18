@@ -1,8 +1,8 @@
-let homebtn = document.querySelector(".home-btn")
+// let homebtn = document.querySelector(".home-btn")
 
-homebtn.addEventListener("click",function(){
-   window.location.href="index.html"
-})
+// homebtn.addEventListener("click",function(){
+//    window.location.href="index.html"
+// })
 
 let product = document.getElementById("product");
 let submenues = document.querySelector(".submenues");
@@ -616,11 +616,7 @@ cross.addEventListener("click",(()=>{
 
 // --------------------Login Method------------------------
 
-let loginbtn = document.querySelector(".login-user")
 
-loginbtn.addEventListener("click",function(){
-   window.location.href="Login.html"
-})
 
 
 
