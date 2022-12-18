@@ -903,3 +903,7 @@ th{
   cursor: pointer;
   color:#6639b3;
 }
+.blogs>a{
+  text-decoration: none;
+  color:black;
+}
