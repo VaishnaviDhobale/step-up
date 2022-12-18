@@ -418,3 +418,9 @@ let landingPage = document.querySelector('.landing-page');
 landingPage.addEventListener("click",function(){
    window.location.href = "landingPage.html"
 })
+
+
+
+let userName = document.querySelector(".username")
+
+userName.innerText = localStorage.getItem("userName")

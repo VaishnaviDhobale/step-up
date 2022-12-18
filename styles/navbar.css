@@ -19,6 +19,7 @@ hr{
 }
 a{
     text-decoration: none;
+    color:black;
 }
 
 .openbtn{
@@ -54,7 +55,7 @@ a{
 
 #navbar #exploration {
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width:20%;
     padding:6px 0;
 }
@@ -145,7 +146,7 @@ a{
     /* padding:5px; */
     justify-content: center;
     /* align-items: center; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 15px;
     justify-content: space-evenly;
 }
@@ -243,7 +244,7 @@ a{
 #navbar #profile-icons{
     width:30%;
     display: flex;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     justify-content: space-around;
 }
 
@@ -252,10 +253,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: end;
-    /* justify-content: center; */
-    /* border:1px solid black; */
-    width:70%;
-    /* z-index:100 */
+    width:65%;
 }
 
 #search-product >div:first-child{
@@ -264,6 +262,7 @@ a{
    border-radius: 7px;
    display: flex;
    align-items: center;
+   /* border:1px solid black; */
    justify-content: center;
 }
 
@@ -446,6 +445,7 @@ a{
 
 #lower-navbar{
     height:70px;
+    width:100%;
     margin-top: 60px;
     border: 1px solid rgb(230, 230, 230);
 }
@@ -465,8 +465,17 @@ a{
     flex-direction: column;
     /* border:1px solid black; */
     z-index: 10;
+    
 }
-
+/* .dashboard-setting > div:first-child{
+    width:30%;
+}
+.dashboard-setting > div:first-child>div{
+    width:70%;
+}
+.dashboard-setting > div:last-child{
+    width:60%;
+} */
 .dashboard-button{
     display: flex;
     justify-content: center;
@@ -524,6 +533,7 @@ a{
     border-radius: 12px;
     width:34%;
     margin-left: 63%;
+    /* border:1px solid black */
 }
 
 .add-reports:hover{
@@ -615,9 +625,10 @@ a{
 
 #main-section{
     width:100%;
-    min-height:1200px;
+    min-height:1000px;
     background-color: #E1F0FE;
     padding-top: 20px;
+    margin: auto;
 }
 
 #main-section> div{
@@ -638,11 +649,10 @@ a{
     gap:30px;
     padding: 20px;
     overflow: visible;
-    margin: auto;
 }
 
 .dashboard-section>div{
-    max-width:100%;
+    /* max-width:100%; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     width:48%;
     min-width: 400px;
@@ -654,41 +664,50 @@ a{
     overflow: hidden;
     z-index: 1;
     border-radius: 12px;
+    /* border: 1px solid; */
     /* position:relative; */
+    
 }
 
-.dashboard-section>div>div:first-child{
+
+
+/* <---------------------------------------------------> */
+
+.card>div:first-child{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    height:20%;
+    border: 1px solid rgb(219, 219, 219);
+    /* background-color: yellow; */
 }
+
 .dashboard-heading{
     margin-left: 8px;
     width:75%;
+    height:30%;
+    /* border:1px solid black; */
 }
-.dashboard-heading>h4{
 
-}
+/* .dashboard-heading>h4{
+
+} */
 .dashboard-heading>p{
     font-size: 14px;
 }
 
 .dashboard-icons{
     width:80px;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
     user-select: none;
 }
-.dashboard-section>div>div:first-child{
-    height:20%;
-    border: 1px solid rgb(219, 219, 219);
-}
-.textarea-box{
-    height:80%;
-    
+
+.textarea-box {
+    height:80%; 
+    /* border:1px solid black; */
 }
 .textarea-box>textarea{
     width:100%;
@@ -704,6 +723,7 @@ a{
 
 .subscriber-count{
     display: grid;
+    height:80%; 
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,100px);
     gap:20px 20px;
@@ -749,6 +769,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border:1px solid black; */
 }
 .blank-img>img{
     width:250px;
@@ -769,7 +790,6 @@ a{
     #exploration #logo-section>div:last-child{
         display: none;
     }
-    /* <--------Dropdown Marketing---------> */
     
     #exploration #marketing-section{
         width:60%;
@@ -780,7 +800,7 @@ a{
     }
     #navbar #exploration {
         display: flex;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width:30%;
         padding:6px 0;
     }
@@ -818,8 +838,14 @@ a{
         transition: 0.3s;
         overflow: scroll;
         /* background-color: red; */
+        /* border-bottom:2px solid #111; */
     }
-      
+    .sidebar-menu {
+       border-bottom:1px solid rgb(187, 187, 187);
+    }
+    .sidebar-icon{
+        padding-right:8px;
+    }
     #side-window a:hover {
         color: #377DFF;
         /* background-color: red; */
@@ -855,7 +881,9 @@ a{
         margin-left:70%;
         width:28%;
     }
-
+    #search-product{
+        width:80%
+    }
     #profile-icons #user-img{
         /* border:1px solid red; */
         width:12%;
@@ -866,6 +894,64 @@ a{
     #user-img>div>img{
         width:100%
     }
+
+
+    /* <---------------------------------------------------> */
+    
+    .dashboard-section>div{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        width:48%;
+        min-width: 200px;
+        min-height:400px;
+    }
+    
+    
+    
+    
+    .card>div:first-child{
+        display: flex;
+        justify-content: space-around;
+        align-items:flex-start;
+        padding-top: 20px;
+        height:20%;
+    }
+    
+    .dashboard-heading{
+        margin-left: 8px;
+        width:75%;
+        height:30%;
+    }
+    .dashboard-heading>p{
+        font-size: 14px;
+    }
+    .textarea-box {
+        height:80%; 
+    }
+    .textarea-box>textarea{
+        width:100%;
+        height:100%;
+        resize: none;
+        font-size: 18px;
+        font-weight: 400;
+        padding:20px;
+    }
+    
+    .subscriber-count{
+        height:80%; 
+        gap:10px;
+        padding:15px 15px;
+    }
+
+    .subscriber-count>div>h3{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .blank-img{
+        height:80%;
+    }
+    
+    
+    
 }
 
 
@@ -891,7 +977,7 @@ a{
     }
     #navbar #exploration {
         display: flex;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width:40%;
         padding:6px 0;
     }
@@ -913,23 +999,33 @@ a{
         z-index: 500; 
         top: 0;
         left: 0;
-        background-color: black;
-        overflow-x: hidden; 
+        background-color: white;
+        /* overflow-x: hidden;  */
         padding-top: 70px; 
         transition: 0.5s; 
+        overflow: scroll;
       }
       
     #side-window a {
-        padding: 8px 8px 8px 32px;
+        padding: 12px 12px 8px 32px;
         text-decoration: none;
-        font-size: 20px;
-        color: rgb(207, 204, 204);
+        font-size: 16px;
+        color: black;
         display: flex;
         transition: 0.3s;
+        overflow: scroll;
+        /* background-color: red; */
+        /* border-bottom:2px solid #111; */
     }
-      
+    .sidebar-menu {
+       border-bottom:1px solid rgb(187, 187, 187);
+    }
+    .sidebar-icon{
+        padding-right:8px;
+    }
     #side-window a:hover {
-        color: white;
+        color: #377DFF;
+        /* background-color: red; */
     }
       
     #side-window .closebtn {
@@ -952,7 +1048,6 @@ a{
     .openbtn:hover {
         background-color: #444;
     }
-      
             
     #navbar #profile-icons{
         width:40%;
@@ -961,6 +1056,9 @@ a{
     #dropdown-profile{
         margin-left:60%;
         width:38%;
+    }
+    #search-product{
+        width:80%
     }
     #profile-icons #add-content , #call-btn {
         display: none;
@@ -975,6 +1073,82 @@ a{
     #user-img>div>img{
         width:100%
     }
+    .add-reports{
+        font-size: 14px;
+        width:48%;
+        margin-left:50%;
+        justify-content: space-evenly;
+    }
+    .dashboard-setting > div:first-child{
+       width:50%;
+    }
+    .dashboard-setting > div:first-child>div{
+        /* width:70%; */
+    }
+    .dashboard-setting > div:last-child{
+        width:60%;
+    }
+    
+    
+    /* <---------------------------------------------------> */
+    
+    .dashboard-section>div{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        width:45%;
+        min-width:0px;
+        min-height:300px;
+        /* flex-wrap:unset; */
+        /* gap:20px */
+    }
+    
+    .card>div:first-child{
+        display: flex;
+        justify-content: space-around;
+        align-items:flex-start;
+        padding-top: 20px;
+        height:25%;
+    }
+    .dashboard-icons >span{
+        font-size: 16px;
+    }
+    .dashboard-heading{
+        margin-left: 8px;
+        width:75%;
+        height:30%;
+    }
+    .dashboard-heading>h4{
+        font-size: 12px;
+    }
+    .dashboard-heading>p{
+        font-size: 10px;
+    }
+    .textarea-box {
+        height:75%; 
+    }
+    .textarea-box>textarea{
+        width:100%;
+        height:100%;
+        resize: none;
+        font-size: 14px;
+        font-weight: 400;
+        padding:20px;
+    }
+    
+    .subscriber-count{
+        height:75%; 
+        gap:10px;
+        padding:15px 15px;
+    }
+
+    .subscriber-count>div>h3{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .blank-img{
+        height:75%;
+    }
+    
+    
 }
 
 
@@ -1035,23 +1209,33 @@ a{
         z-index: 500; 
         top: 0;
         left: 0;
-        background-color: black;
-        overflow-x: hidden; 
+        background-color: white;
+        /* overflow-x: hidden;  */
         padding-top: 70px; 
         transition: 0.5s; 
+        overflow: scroll;
       }
       
     #side-window a {
-        padding: 8px 8px 8px 32px;
+        padding: 12px 12px 8px 32px;
         text-decoration: none;
-        font-size: 20px;
-        color: rgb(207, 204, 204);
+        font-size: 16px;
+        color: black;
         display: flex;
         transition: 0.3s;
+        overflow: scroll;
+        /* background-color: red; */
+        /* border-bottom:2px solid #111; */
     }
-      
+    .sidebar-menu {
+       border-bottom:1px solid rgb(187, 187, 187);
+    }
+    .sidebar-icon{
+        padding-right:8px;
+    }
     #side-window a:hover {
-        color: white;
+        color: #377DFF;
+        /* background-color: red; */
     }
       
     #side-window .closebtn {
@@ -1074,7 +1258,6 @@ a{
     .openbtn:hover {
         background-color: #444;
     }
-      
             
     #navbar #profile-icons{
         width:40%;
@@ -1091,7 +1274,7 @@ a{
     #navbar #profile-icons{
         width:50%;
         display: flex;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         /* justify-content: space-around; */
     }
     
@@ -1113,5 +1296,312 @@ a{
     }
     #user-img>div>img{
         width:100%
+    }
+
+    .add-reports{
+        font-size: 14px;
+        width:40%;
+        /* margin-left:40%; */
+        justify-content: space-evenly;
+    }
+    .dashboard-setting > div:first-child{
+       display: none;
+    }
+    .dashboard-setting > div:first-child>div{
+        /* width:70%; */
+        font-size: 12px;
+    }
+    .dashboard-setting > div:last-child{
+        width:100%;
+    }
+    
+      /* <---------------------------------------------------> */
+      .card{
+        margin: 0px auto;
+      }
+      .dashboard-section>div{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        width:90%;
+        min-width:0px;
+        min-height:300px;
+        /* margin: auto; */
+    }
+    
+    .card>div:first-child{
+        display: flex;
+        justify-content: space-around;
+        align-items:flex-start;
+        padding-top: 20px;
+        height:25%;
+    }
+    .dashboard-icons >span{
+        font-size: 16px;
+    }
+    .dashboard-heading{
+        margin-left: 8px;
+        width:75%;
+        height:30%;
+    }
+    .dashboard-heading>h4{
+        font-size: 12px;
+    }
+    .dashboard-heading>p{
+        font-size: 10px;
+    }
+    .textarea-box {
+        height:75%; 
+    }
+    .textarea-box>textarea{
+        width:100%;
+        height:100%;
+        resize: none;
+        font-size: 14px;
+        font-weight: 400;
+        padding:20px;
+    }
+    
+    .subscriber-count{
+        height:75%; 
+        gap:10px;
+        padding:15px 15px;
+    }
+
+    .subscriber-count>div>h3{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .blank-img{
+        height:75%;
+    }
+    
+}
+
+
+@media all and (min-width:320px) and (max-width:450px){
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    #exploration #logo-section  {
+        width:20%;
+    }
+    #exploration #logo-section>div:last-child{
+        display: none;
+    }
+    /* <--------Dropdown Marketing---------> */
+    
+    #exploration #marketing-section {
+        width:60%;
+        display: flex;
+        font-size: 12px;
+    }
+    .dropdown-marketing a {
+        display: flex;
+        /* border:1px solid yellow; */
+        /* text-align:center; */
+        font-size: 10px;
+        font-weight: 300;
+        letter-spacing: 0.7px;
+        padding:8px 12px;
+        margin:auto;
+        justify-content: start;
+        align-items: center;
+    }
+    .navbar-hr{
+       display: none;
+    }
+    #navbar #exploration {
+        display: flex;
+        /* border: 1px solid black; */
+        width:50%;
+        padding:8px 0;
+    }
+    #navbar #option-btns{
+        display: none;
+    }
+    .openbtn{
+        display: block;
+        margin-left:20px;
+        border:none;
+        font-size: 25px;
+        background-color: white;
+    }
+    #side-window {
+        height: 700px;
+        width: 0; 
+        display: block;
+        position: fixed;
+        z-index: 500; 
+        top: 0;
+        left: 0;
+        background-color: white;
+        /* overflow-x: hidden;  */
+        padding-top: 70px; 
+        transition: 0.5s; 
+        overflow: scroll;
+      }
+      
+    #side-window a {
+        padding: 12px 12px 8px 32px;
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+        display: flex;
+        transition: 0.3s;
+        overflow: scroll;
+        /* background-color: red; */
+        /* border-bottom:2px solid #111; */
+    }
+    .sidebar-menu {
+       border-bottom:1px solid rgb(187, 187, 187);
+    }
+    .sidebar-icon{
+        padding-right:8px;
+    }
+    #side-window a:hover {
+        color: #377DFF;
+        /* background-color: red; */
+    }
+      
+    #side-window .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .openbtn {
+       font-size: 16px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 8px 12px;
+        border: none;
+    }
+      
+    .openbtn:hover {
+        background-color: #444;
+    }
+            
+    #navbar #profile-icons{
+        width:40%;
+    }
+
+    #dropdown-profile{
+        margin-left:50%;
+        width:50%;
+    }
+    #profile-icons #add-content , #call-btn {
+        display: none;
+    }
+
+    #navbar #profile-icons{
+        width:50%;
+        display: flex;
+    
+    }
+    
+    
+    #profile-icons #search-product{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width:80%
+    }
+    #profile-icons #user-img{
+        /* border:1px solid red; */
+        width:20%;
+    }
+    #user-img>div{
+        width:100%;
+    }
+    #user-img>div>img{
+        width:100%
+    }
+    
+    .add-reports{
+        font-size: 12px;
+        width:40%;
+        margin-left:55%;
+        justify-content: space-evenly;
+        /* border:1px solid red; */
+    }
+    .add-reports>p{
+        width:80%;
+    }
+    .add-reports>span{
+        width:20%;
+    }
+    .dashboard-setting > div:first-child{
+       display: none;
+    }
+    .dashboard-setting > div:first-child>div{
+        /* width:70%; */
+        font-size: 12px;
+    }
+    .dashboard-setting > div:last-child{
+        width:100%;
+    }
+    
+    .card{
+        margin: 0px auto;
+      }
+      .dashboard-section>div{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        width:90%;
+        min-width:0px;
+        min-height:300px;
+        /* margin: auto; */
+    }
+    
+    .card>div:first-child{
+        display: flex;
+        justify-content: space-around;
+        align-items:flex-start;
+        padding-top: 20px;
+        height:25%;
+    }
+    .dashboard-icons >span{
+        font-size: 16px;
+    }
+    .dashboard-heading{
+        margin-left: 8px;
+        width:75%;
+        height:30%;
+    }
+    .dashboard-heading>h4{
+        font-size: 12px;
+    }
+    .dashboard-heading>p{
+        font-size: 10px;
+    }
+    .textarea-box {
+        height:75%; 
+    }
+    .textarea-box>textarea{
+        width:100%;
+        height:100%;
+        resize: none;
+        font-size: 14px;
+        font-weight: 400;
+        padding:20px;
+    }
+    
+    .subscriber-count{
+        height:75%; 
+        gap:5px;
+        padding:10px 10px;
+    }
+
+    .subscriber-count>div>h3{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .blank-img{
+        height:75%;
+    }
+    .blank-img>img{
+        height:75%;
     }
 }
