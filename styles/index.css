@@ -439,6 +439,7 @@ strong{
 }
 .second-middle-thired{
   margin-top: 70px;
+  padding:0 40px;
 }
 /* .container{
   padding: 0 45px;
@@ -514,7 +515,7 @@ strong{
   transition: 0.5s ease-in-out;
 }
 .slide>img{
-  width: 20%;
+  width: 21%;
   height: 34%;
   margin-bottom: 40px;
   border-radius: 50%;
