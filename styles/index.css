@@ -412,6 +412,7 @@ strong{
 }
 .second-middle-thired{
   cursor: pointer;
+  margin: 0 40px;
 }
 .second-middle-thired p{
   font-size:18px;
@@ -518,6 +519,7 @@ strong{
   height: 34%;
   margin-bottom: 40px;
   border-radius: 50%;
+  /* border: 2px solid red; */
 }
 .slide>h2{
   margin-top: 20px;
@@ -906,7 +908,7 @@ th{
   cursor: pointer;
   color:#6639b3;
 }
-.blogs>a,.login>a{
+.blogs>a,.login{
   text-decoration: none;
   color:black;
 }

@@ -9,14 +9,14 @@
   <title>Step-Up</title>
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="styles/index2.css">
+  <!-- <link rel="stylesheet" href="styles/index2.css"> -->
   <script src="https://kit.fontawesome.com/82c1872f04.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div id="home-navbar">
     <ul>
-      <img src="img/logilogo.jpg" alt="Step-Up logo">
+      <img class="home-logo" src="img/logilogo.jpg" alt="Step-Up logo">
       <li id="product">Products<i class="fa-sharp fa-solid fa-angle-down"></i></li>
       <li>Princing</li>
       <li id="resources"></i>Resources<i class="fa-sharp fa-solid fa-angle-down"></i></li>
@@ -29,7 +29,7 @@
         </div>
       </li>
       <li class="blogs"><a href="./blog.html">Blogs</a></li>
-      <li class="login"><a href="Login.html">Login</a></li>
+      <li><a class="login" href="login.html">Login</a></li>
       <div id="home-navbar-buttons">
         <button><a href="#">Free Demo</a></button>
         <button><a href="SingnUp.html">Free Signup</a></button>
@@ -327,7 +327,7 @@
               </div>
               <div class="slide">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnu-70hzgEWdk8jm8QeI8-lHHOe6ja0JzEMA&usqp=CAU"
+                  src="https://machohairstyles.com/wp-content/uploads/2017/03/professional-hairstyle-for-men-7.jpg"
                   alt="">
                 <p>""A full-featured marketing platform. With this, you have all you need to get started and succeed.
                   Having all in one platform make any marketer job much easier."</p>
@@ -619,4 +619,9 @@
   AOS.init({
     duration: 1000
   });
+</script>
+<script>
+  let homeLogo=document.querySelector(".home-logo").addEventListener("click",(()=>{
+    window.location.href="index.html"
+  }))
 </script>

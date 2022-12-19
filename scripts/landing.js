@@ -9,6 +9,7 @@ $(".menu-togglee").click(function (e) {
 
 let createBtn = document.getElementById("create-btn");
 
-createBtn.addEventListener("click",()=>{
-    window.location.href="choose-template.html"
+createBtn.addEventListener("click", () => {
+    window.location.href = "choose-template.html"
 })
+

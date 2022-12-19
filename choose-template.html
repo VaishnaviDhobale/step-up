@@ -5,177 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>choose-template</title>
-    <style>
-        * {
-            margin: 0%;
-            padding: 0%;
-        }
 
-        #nav-btn {
-            /* border: 1px solid red; */
-            height: 50px;
-            margin-left: 15px;
-        }
-
-        #nav-arrow-left {
-            cursor: pointer;
-
-        }
-
-        #nav-arrow-left {
-            margin: 10px;
-            padding-top: 5px;
-            margin-left: 10px;
-            width: 25px;
-        }
-
-        /* ------------------------ */
-        #container {
-            background: #F2F5FC;
-            height: 100vh;
-            border: 1px solid #ffff;
-        }
-
-        /* --------------------------- */
-        #main-container {
-            background: #ffff;
-            height: 80px;
-            /* border: 1px solid green; */
-            margin: 12px;
-            padding: 24px 5px 40px 18px;
-            border-radius: 8px;
-        }
-
-        #div-thems-btn {
-            margin-top: 20px;
-
-        }
-
-        .thems-div-btn {
-            border: none;
-            font-size: 17px;
-            padding: 7px;
-            border-radius: 6px;
-        }
-
-        #thems-btn {
-
-            background-color: #e1f0ff;
-            color: #377dff;
-        }
-
-        #brush-img {
-            color: #1F2A68;
-        }
-
-        #btn-code {
-            background: none;
-            margin-left: 20px;
-            color: #1F2A68;
-        }
-
-        /* ----------------------- */
-
-        #theme-row {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 10px;
-            background: rgb(231, 230, 230);
-            /* border: 5px solid */
-            margin: 40px 0px 0px -15px;
-            padding: 12px 10px 6px 12px;
-        }
-
-        #theme-row>div {
-            /* width: 150px; */
-            /* background: aqua; */
-            /* height: 300px; */
-
-        }
-
-        #theme-row>div img {
-            width: 200px;
-        }
-
-        /* ------------------------------- */
-
-
-        .container {
-            padding: 1em 0;
-            float: left;
-            width: 50%;
-        }
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="styles/choose.css">
+    <!-- google Icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
 
-        .content {
-            position: relative;
-            width: 90%;
-            max-width: 400px;
-            /* margin: auto; */
-            /* overflow: hidden; */
-        }
+    <link rel="stylesheet" href="styles/navbar.css">
+    <title>Template Page</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon_io/favicon-32x32-remove.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-        .content .content-overlay {
-            background: rgba(0, 0, 0, 0.7);
-            position: absolute;
-            border-radius: 7px;
-            height: 99%;
-            width: 107%;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            opacity: 0;
-
-        }
-
-        .content:hover .content-overlay {
-            opacity: 1;
-        }
-
-        .content-image {
-            width: 100%;
-            border-radius: 7px;
-        }
-
-        .content-btn {
-            position: absolute;
-            text-align: center;
-            top: 50%;
-            left: 50%;
-            opacity: 0;
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-
-
-
-        }
-
-        .content:hover .content-btn {
-            top: 50%;
-            left: 50%;
-            opacity: 1;
-
-        }
-
-        .Choose_btn {
-            background: #34C38F;
-            padding: 0.5rem 1.5rem;
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-
-        }
-    </style>
 </head>
 
 <body>
+    <div id="header-bar" style="margin-top: 60px;">
+        <div id="header"></div>
+    </div>
+
     <div id="nav-btn">
 
         <img onclick="history.back()" id="nav-arrow-left" src="img/arrow-left.svg" alt="">
@@ -189,17 +43,39 @@
 
             <!-- ------button---------- -->
             <div id="div-thems-btn">
-                <span><img id="brush-img" alt="" width="20px"><button id="thems-btn"
-                        class="thems-div-btn">Themes</button></span>
+                <span class="thems-div-btn" id="thems-btn"> <span class="material-symbols-outlined" id="thems-syb">
+                        brush
+                    </span><button class="thems-div-btn" id="thems-btn">Themes</button></span>
 
-                <button id="btn-code" class="thems-div-btn">Code your own</button>
+                <button id="btn-code" class="thems-div-btn"> Code your own</button>
             </div>
 
             <!-- ------button End---------- -->
 
             <!-- -----------theme-row------------ -->
             <div id="theme-row">
-                <div>1</div>
+                <!-- <div>1</div> -->
+
+                <div class="img-container">
+                    <div class="content">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="content-overlay"></div>
+                            <div class="content-image">
+                                <div id="blank_template"
+                                    style="background: #E1F0FF; height: 170px; width: 200px; border-radius: 7px;">
+                                    <span class="material-symbols-outlined">
+                                        edit_square
+                                    </span>
+                                    <h3>Blank Template</h3>
+                                </div>
+
+                            </div>
+                            <div class="content-btn">
+                                <button class="Choose_btn">Choose</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
                 <div class="img-container">
                     <div class="content">
@@ -222,7 +98,7 @@
                         <a href="#">
                             <div class="content-overlay"></div>
                             <img class="content-image"
-                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/bakery.png">
+                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/fitness.png">
                             <div class="content-btn">
 
 
@@ -238,7 +114,7 @@
                         <a href="#">
                             <div class="content-overlay"></div>
                             <img class="content-image"
-                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/bakery.png">
+                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/clock.png">
                             <div class="content-btn">
 
 
@@ -254,7 +130,7 @@
                         <a href="#">
                             <div class="content-overlay"></div>
                             <img class="content-image"
-                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/bakery.png">
+                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/coffee_shop.png">
                             <div class="content-btn">
 
 
@@ -270,7 +146,7 @@
                         <a href="#">
                             <div class="content-overlay"></div>
                             <img class="content-image"
-                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/bakery.png">
+                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/college.png">
                             <div class="content-btn">
 
 
@@ -286,7 +162,7 @@
                         <a href="#">
                             <div class="content-overlay"></div>
                             <img class="content-image"
-                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/bakery.png">
+                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/footwear.png">
                             <div class="content-btn">
 
 
@@ -296,6 +172,83 @@
                     </div>
                 </div>
 
+
+                <div class="img-container">
+                    <div class="content">
+                        <a href="#">
+                            <div class="content-overlay"></div>
+                            <img class="content-image"
+                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/football.png">
+                            <div class="content-btn">
+
+
+                                <button class="Choose_btn">Choose</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="img-container">
+                    <div class="content">
+                        <a href="#">
+                            <div class="content-overlay"></div>
+                            <img class="content-image"
+                                src=" https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/cycle.png">
+                            <div class="content-btn">
+
+
+                                <button class="Choose_btn">Choose</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="img-container">
+                    <div class="content">
+                        <a href="#">
+                            <div class="content-overlay"></div>
+                            <img class="content-image"
+                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/hotel.png">
+                            <div class="content-btn">
+
+
+                                <button class="Choose_btn">Choose</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="img-container">
+                    <div class="content">
+                        <a href="#">
+                            <div class="content-overlay"></div>
+                            <img class="content-image"
+                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/lipstick.png">
+                            <div class="content-btn">
+
+
+                                <button class="Choose_btn">Choose</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="img-container">
+                    <div class="content">
+                        <a href="#">
+                            <div class="content-overlay"></div>
+                            <img class="content-image"
+                                src="https://d2p078bqz5urf7.cloudfront.net/cloud/prod/assets/img/landing-page/drag-drop-builder/thumbnails/icecream.png">
+                            <div class="content-btn">
+
+
+                                <button class="Choose_btn">Choose</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <!-- -----------theme-row End----------- -->
@@ -306,17 +259,10 @@
 
 </html>
 
+
 <script>
-    let container = document.getElementsByClassName("img-container")
-    let thImg = document.getElementById("th-img");
-    let chBtn = document.getElementById("ch_btn");
+    $(function () {
+        $('#header').load('header.html');
+    })
+</script>
 
-
-    function mouseOver() {
-        chBtn.style.background = "blue";
-        chBtn.style.display = "block"
-        // container.style.background = "blue"
-    }
-    function mouseout() {
-        chBtn.style.display = "none"
-    }

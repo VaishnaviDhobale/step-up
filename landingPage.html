@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landingpages</title>
 
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!------ Include the above in your HEAD tag ---------->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
@@ -14,9 +15,22 @@
 
     <link rel="stylesheet" href="/styles/landing.css">
 
+    <!--  -->
+    <link rel="stylesheet" href="styles/navbar.css">
+    <title>Landing Page</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon_io/favicon-32x32-remove.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
 </head>
 
 <body>
+    <!-- <div id="header"></div> -->
+
 
     <!-- _______________________side bar_______________________ -->
 
@@ -36,7 +50,11 @@
                 allowfullscreen></iframe>
         </div>
     </div>
-    <div id="container">
+    <div id="container" style="margin-top: 60px;">
+
+        <div id="header-bar">
+            <div id="header"></div>
+        </div>
 
         <div id="container-box">
 
@@ -57,7 +75,7 @@
 
                     <div id="create-btn-div">
                         <button id="create-btn"> Create Landing page</button>
-                        <span>OR</span> <a class="menu-togglee" id="watch-link" href="#">Watch Help
+                        <span id="spainID">OR</span> <a class="menu-togglee" id="watch-link" href="#">Watch Help
                             video</a>
 
                     </div>
@@ -75,3 +93,11 @@
 </html>
 
 <script src="/scripts/landing.js"></script>
+<script>
+    $(function () {
+        $('#header').load('header.html');
+    })
+
+</script>
+
+<!-- <script src="scripts/refer.js"></script> -->

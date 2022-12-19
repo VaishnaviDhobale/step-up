@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 #container {
     background: #F5F9FF;
 
@@ -49,7 +54,7 @@
     border: none;
 }
 
-span {
+#spainID {
     margin: 10px;
 }
 
