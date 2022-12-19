@@ -50,6 +50,7 @@ body{
   margin-right: 50px;
   position: relative;
   bottom:7px;
+  cursor: pointer;
   /* border: 1px solid black; */
 }
 #home-navbar-buttons > button:nth-child(1) {
@@ -260,6 +261,7 @@ strong{
 .resSubMenu-1>p:first-child{
   background-color:#c8d3e3;
   color: #135ece;
+  padding-top: 20px;
 }
 .resSubMenu-1>p:hover{
   background-color:#c8d3e3;
@@ -436,6 +438,7 @@ strong{
 }
 .second-middle-thired{
   margin-top: 70px;
+  padding:0 40px;
 }
 /* .container{
   padding: 0 45px;
@@ -511,9 +514,9 @@ strong{
   transition: 0.5s ease-in-out;
 }
 .slide>img{
-  width: 200px;
-  height:200px;
-  margin-bottom:40px;
+  width: 21%;
+  height: 34%;
+  margin-bottom: 40px;
   border-radius: 50%;
 }
 .slide>h2{
