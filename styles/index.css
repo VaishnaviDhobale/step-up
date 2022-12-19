@@ -50,6 +50,7 @@ body{
   margin-right: 50px;
   position: relative;
   bottom:7px;
+  cursor: pointer;
   /* border: 1px solid black; */
 }
 #home-navbar-buttons > button:nth-child(1) {
@@ -260,6 +261,7 @@ strong{
 .resSubMenu-1>p:first-child{
   background-color:#c8d3e3;
   color: #135ece;
+  padding-top: 20px;
 }
 .resSubMenu-1>p:hover{
   background-color:#c8d3e3;
@@ -410,6 +412,7 @@ strong{
 }
 .second-middle-thired{
   cursor: pointer;
+  margin: 0 40px;
 }
 .second-middle-thired p{
   font-size:18px;
@@ -511,10 +514,11 @@ strong{
   transition: 0.5s ease-in-out;
 }
 .slide>img{
-  width: 200px;
-  height:200px;
-  margin-bottom:40px;
+  width: 20%;
+  height: 34%;
+  margin-bottom: 40px;
   border-radius: 50%;
+  /* border: 2px solid red; */
 }
 .slide>h2{
   margin-top: 20px;
@@ -903,7 +907,7 @@ th{
   cursor: pointer;
   color:#6639b3;
 }
-.blogs>a{
+.blogs>a,.login{
   text-decoration: none;
   color:black;
 }

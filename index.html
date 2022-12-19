@@ -16,7 +16,7 @@
 <body>
   <div id="home-navbar">
     <ul>
-      <img src="img/logilogo.jpg" alt="Step-Up logo">
+      <img class="home-logo" src="img/logilogo.jpg" alt="Step-Up logo">
       <li id="product">Products<i class="fa-sharp fa-solid fa-angle-down"></i></li>
       <li>Princing</li>
       <li id="resources"></i>Resources<i class="fa-sharp fa-solid fa-angle-down"></i></li>
@@ -29,7 +29,7 @@
         </div>
       </li>
       <li class="blogs"><a href="./blog.html">Blogs</a></li>
-      <li>Login</li>
+      <li><a class="login" href="login.html">Login</a></li>
       <div id="home-navbar-buttons">
         <button><a href="#">Free Demo</a></button>
         <button><a href="SingnUp.html">Free Signup</a></button>
@@ -306,7 +306,7 @@
               </div>
               <div class="slide">
                 <img
-                  src="https://anandmunshi.com/wp-content/uploads/portrait-of-a-young-smiling-professional-man-arms-PM8D6JZ.jpg"
+                  src="https://cdn.pixabay.com/photo/2020/09/18/22/05/man-5583034_960_720.jpg"
                   alt="">
                 <p>"EngageBay has everything I need when it comes to managing customer relations and sales activities.
                   The features I most frequently use are automation for sending emails, managing sales, and marketing
@@ -327,7 +327,7 @@
               </div>
               <div class="slide">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnu-70hzgEWdk8jm8QeI8-lHHOe6ja0JzEMA&usqp=CAU"
+                  src="https://machohairstyles.com/wp-content/uploads/2017/03/professional-hairstyle-for-men-7.jpg"
                   alt="">
                 <p>""A full-featured marketing platform. With this, you have all you need to get started and succeed.
                   Having all in one platform make any marketer job much easier."</p>
@@ -340,7 +340,7 @@
         </div>
         <div class="middle-six">
           <div class="middle-six-up">
-            <h1>Do It All With EngageBay</h1>
+            <h1>Do It All With Step-Up</h1>
             <p>Stop paying thousands of dollars to dozens of marketing, sales, and support software. Experience the
               world's most affordable, unified software. EngageBay's all-in-one CRM software is the most comprehensive
               solution for your business.</p>
@@ -619,4 +619,9 @@
   AOS.init({
     duration: 1000
   });
+</script>
+<script>
+  let homeLogo=document.querySelector(".home-logo").addEventListener("click",(()=>{
+    window.location.href="index.html"
+  }))
 </script>
