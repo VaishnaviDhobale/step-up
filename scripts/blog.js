@@ -1,5 +1,7 @@
-let blogLogo=document.querySelector(".blog-logo");
-blogLogo.style.cursor="pointer";
-blogLogo.addEventListener("click",(()=>{
-  window.location.href="index.html";
-}))
+
+
+let landingPage = document.querySelector('.home-btn');
+
+landingPage.addEventListener("click",function(){
+   window.location.href = "index.html"
+})
